@@ -1,0 +1,16 @@
+# 排除所有 Rust 子项目中的编译生成的文件
+**/target/
+**/*.rs.bk
+**/*.d
+**/*.o
+**/*.swp
+
+# 如果有 Rust 的依赖文件夹，可以忽略它
+**/Cargo.lock
+
+# 排除 Rust 的编译缓存目录
+**/.cargo/
+
+# Go 项目的默认编译目录（target 是 Go 编译默认的目标目录）
+# 这个是针对你的 Go 项目而不是 Rust 项目的
+target/
